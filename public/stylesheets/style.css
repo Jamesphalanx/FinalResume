@@ -1,8 +1,164 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+html, body{
+  height: 100%;
+  cursor: default;
 }
-
-a {
+body{
+  font-family: 'Lato', sans-serif;
+  margin: 0px;
+}
+a{
   color: #00B7FF;
 }
+
+/*Background*/
+#intro-bg{
+  position: absolute;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+.intro-bg-all{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: no-repeat 50% 50%;
+  background-size: cover;
+  opacity: 1;
+}
+#intro-bg-1{
+  background-image: url('../images/1.jpeg');
+  z-index: 20;
+}
+/*PDF Button*/
+#pdf-btn{
+  position: absolute;
+  z-index: 100;
+  opacity: 0.9;
+  cursor: pointer;
+  transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+  padding: 10px;
+}
+#pdf-btn svg{
+  width: 100%;
+  height: 100%;
+}
+/*All Slides*/
+.all-slides{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top:0;
+}
+/*Intro div*/
+#intro-div{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 99;
+  background-color: rgba(255,255,255,.67);
+  box-shadow: 0 1em 2em -1em rgba(0,0,0,.7);
+  padding: 1em 2em;
+  line-height: 1.2;
+  font-weight: 400;
+  font-size: 35px;
+  overflow: hidden;
+}
+#intro-div small{
+  display: block;
+  font-size: .7em;
+  font-weight: 300;
+  text-align: center;
+}
+.bg-all-slide{
+  position: absolute;
+  top: 130px;
+  z-index: 98;
+  background-color: rgba(255,255,255,.67);
+  box-shadow: 0 1em 2em -1em rgba(0,0,0,.7);
+  padding: 1em 1em;
+  overflow: hidden;
+}
+
+/*Biography PIC*/
+#bio-div{
+  transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+}
+#bio-pic{
+  background-image: url('../images/James.jpg');
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+  opacity: 0.90;
+  width: 240px;
+  height: 340px;
+  box-shadow: 0 1em 2em -0.55em rgba(0,0,0,.7);
+  /*transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;*/
+}
+#desc-div{
+  opacity: 0;
+  z-index: 95;
+}
+#bio-desc{
+  width: 300px;
+  height: 340px;
+}
+#bio-desc-input{
+  position: absolute;
+}
+.bio-desc-label{
+  margin: 0px 0px 0px 0px;
+  font-weight: 500;
+}
+.bio-desc-input{
+  margin: 0px 0px 4px 5px;
+  font-weight: 300;
+}
+#bio-mediabtns{
+  position: absolute;
+}
+#mediabtn-email, #mediabtn-insta, #mediabtn-twitter{
+  top:5px;
+  padding: 4px;
+  border-radius: 5px;
+  opacity: 1;
+  cursor: pointer;
+  transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+}
+#mediabtn-email svg, #mediabtn-insta svg, #mediabtn-twitter svg{
+  width: 32px;
+  height: 32px;
+  padding: 0px 2px;
+  box-shadow: 0 1em 2em -1em rgba(0,0,0,.7);
+}
+#mediabtn-insta{
+  margin-left: 48px;
+}
+#mediabtn-twitter{
+  margin-left: 96px;
+}
+
+#hover-div{
+  position: fixed;
+  z-index: 120;
+  background-color: rgba(255,255,255,.70);
+  box-shadow: 0 1em 2em -1em rgba(0,0,0,.7);
+  padding: 0.2em 0.2em;
+  overflow: hidden;
+  opacity: 0;
+  border-radius: 5px;
+  padding: 2px 5px;
+}
+.center-text{
+  text-align: center;
+  font-weight: 100;
+}
+.center-text .inside-text-center{
+  font-weight: 300;
+  text-align: right;
+}
+
